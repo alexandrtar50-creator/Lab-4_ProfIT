@@ -8,29 +8,32 @@
 <h2>Бібліотека</h2>
 
 <p>
+<!-- Кнопки -->
 <button id="tab-books">Книги</button>
 <button id="tab-readers">Читачі</button>
 <button id="tab-loans">Видачі</button>
 &nbsp;&nbsp;&nbsp;
+<!-- Видаляє дані -->
 <button id="reset">Скинути дані</button>
 </p>
-<p>Перший рядок таблиці - додавання нового запису. Клік по комірці - редагування (Enter або клік поза полем - зберегти, Esc - відміна). ✕ - видалити рядок.</p>
 
+<!-- малює script.js -->
 <section id="sec-books">
-<h3>Книги</h3>
-<table id="table-books" border="1" cellpadding="4" cellspacing="0"></table>
+  <h3>Книги</h3>
+  <table id="table-books" border="1" cellpadding="4"></table>
 </section>
 
-<section id="sec-readers">
-<h3>Читачі</h3>
-<table id="table-readers" border="1" cellpadding="4" cellspacing="0"></table>
+<section id="sec-readers" hidden>
+  <h3>Читачі</h3>
+  <table id="table-readers" border="1" cellpadding="4"></table>
 </section>
 
-<section id="sec-loans">
-<h3>Видачі книг</h3>
-<table id="table-loans" border="1" cellpadding="4" cellspacing="0"></table>
+<section id="sec-loans" hidden>
+  <h3>Видачі</h3>
+  <table id="table-loans" border="1" cellpadding="4"></table>
 </section>
 
+<script src="data.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
